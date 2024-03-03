@@ -18,8 +18,7 @@ use school;
 create table student (
 id bigint not null,
 name varchar(20) not null,
-schoolId bigint not null,
-schoolName varchar(20) not null,
+school_id bigint not null,
 primary key (id)
 );
 ```
@@ -32,7 +31,7 @@ primary key (id)
 );
 ```
 ```mysql
-insert into student values (1, 'Son', 1, 'Seoul High School');
+insert into student values (1, 'Son', 1);
 insert into school values (1, 'Seoul High School');
 ```
 
