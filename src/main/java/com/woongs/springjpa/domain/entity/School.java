@@ -19,7 +19,6 @@ public class School {
     @Column
     private String name;
 
-//    @OneToMany
-//    @JoinColumn(name = "school_id")
-//    private List<Student> students;
+    @OneToMany(mappedBy = "school", fetch = FetchType.EAGER)
+    private List<Student> students;
 }

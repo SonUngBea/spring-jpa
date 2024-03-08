@@ -22,11 +22,11 @@ public class SampleCodeRunner {
 
     @PostConstruct
     public void setup() {
-        Optional<Student> student = studentService.findById(1L);
-        student.ifPresentOrElse(result -> log.info("student : {}", result), () -> log.info("can not find student"));
-
-//        Optional<School> schoolOptional = schoolService.findById(1L);
-//        schoolOptional.ifPresentOrElse(result -> log.info("school : {}", result), () -> log.info("can not find school"));
+//        Optional<Student> student = studentService.findById(1L);
+//        student.ifPresentOrElse(result -> log.info("student : {}", result), () -> log.info("can not find student"));
+//
+        Optional<School> schoolOptional = schoolService.findById(1L);
+        schoolOptional.ifPresentOrElse(result -> log.info("school : {}", result), () -> log.info("can not find school"));
     }
 
 }
